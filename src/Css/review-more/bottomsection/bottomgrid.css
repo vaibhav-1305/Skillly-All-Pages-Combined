@@ -1,0 +1,133 @@
+/******************Bottom Grid*******************/
+
+.bottom-grid-article {
+    display: flex;
+  }
+  
+  
+  /*********************** Bottom Grid - Right Grid (Trending on Skilly) ******************/
+  
+  .right-grid {
+    margin-top: 7vh;
+    border-left: 1px solid black;
+  }
+  
+  .grid-head{
+    font-size: 1.6rem;
+    padding: 3%;
+    padding-left: 8%;
+  }
+  
+  
+  .right-grid-tile {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  
+  .trending-articles {
+    margin-top: 2%;
+    display: flex;
+  }
+  .rank {
+    font-size: 2rem;
+    align-self: center;
+    margin: 0 4%;
+  }
+  
+  
+  .trending-articles-image{
+    width: 24vh;
+    height: 18vh;
+  }
+  
+  .trending-article-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-right: 3%;
+  }
+  
+  
+  .trending-article-content-heading{
+    font-size: 1rem;
+  }
+  .trending-article-content-text{
+    font-size: 0.6rem;
+  }
+  .trending-article-content-details{
+    display: flex;
+    font-size: 0.5rem;
+    margin-top: 1vh;
+  }
+  .trending-article-content-date{
+    flex: 1;
+  }
+  .trending-article-content-length{
+    flex: 1;
+    text-align: right;
+  }
+  
+  /******************Bottom Grid : Left Sub Grid ********************/
+  
+  
+  .leftgrid{
+    display: flex;
+    flex-direction: column;
+    padding-right: 4vw;
+  }
+  
+  .left-grid-tile {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .genre {
+    border-bottom: 1px solid black;
+  }
+  
+  .genre-articles {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 4vh;
+  }
+  
+  
+  .genre-heading{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  
+  .genre-article-image{
+    width: 13vw;
+    height: 20vh;
+  }
+  
+  .genre-article-heading{
+    font-size: 1.2rem;
+  }
+  .genre-article-text{
+    font-size: 0.8rem;
+    /* padding-top: 3%; */
+  }
+  .genre-article-details{
+    display: flex;
+    font-size: 0.6rem;
+    padding: 1vh 0;
+  }
+  .genre-article-date{
+    flex: 1;
+  }
+  .genre-article-read-time{
+    flex: 1;
+    text-align: right;
+    margin-right: 0.5vw;
+  }
+  
+  
+  

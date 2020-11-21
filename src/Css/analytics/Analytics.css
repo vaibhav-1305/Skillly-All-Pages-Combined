@@ -1,0 +1,157 @@
+/*
+#sidenav{
+  width: 40px;
+  height: 100vh;
+  background-color: #D5EDFF;
+  top: 0px;
+  position: fixed;
+}
+*/
+
+.total-grid-i {
+  padding-left: 40px;
+/*  padding-top: 40px;*/
+  display: grid;
+  height: 110vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:  2.5fr 2fr 4.2fr 1fr;
+  grid-template-areas:
+	  "main-body main-body"
+	  "overview overview"
+	  "content1 content2"
+	  "footerp footerp";
+
+}
+
+.headings-analytics{
+  background: auto;
+  width: 80%;
+  padding-left: 20px;
+  grid-area: main-body;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+#task-nav-analytics{
+  display: flex;
+  width: 45%;
+  justify-content: space-between
+}
+#task-nav-analytics a{
+  text-decoration: None;
+  color: #BDBDBD;
+}
+.active-analytics{
+  color: #060606!important;
+}
+
+
+.overview-analytics {
+  background: #f5f5f5;
+  grid-area: overview;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.overview-box-analytics {
+  box-sizing: border-box;
+  height: 75%;
+  width: 94%;
+  background: white;
+  margin: auto;
+  border-radius: .8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0.2rem 9px rgba(0, 0, 0, 0.1);
+}
+
+.stat-heading-analytics{
+  color: #a6a6a6;
+  font-weight: 200;
+}
+
+.stat-value-analytics {
+  font-weight: 480;
+  font-size: 170%;
+}
+
+.stat-value-analytics span {
+  font-weight: 200;
+  font-size: 50%;
+  color: #009933;
+}
+
+
+.content1 {
+  grid-area: content1;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 6%;
+  padding-right: 3%;
+
+
+}
+
+
+.content2 {
+  grid-area: content2;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 6%;
+  padding-left: 3%;
+  display: flex;
+
+}
+
+.content-box {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-radius: .8em;
+  box-shadow: 0 0.2rem 9px rgba(0, 0, 0, 0.1);
+}
+
+.content-table {
+  border-collapse: collapse;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 1em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+
+}
+
+.content-table thead tr {
+  color: #009879;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 30px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table thead tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.footerp {
+  background: #d9d9d9;
+  grid-area: footerp;
+  height: 90%;
+  align-self: flex-end;
+}

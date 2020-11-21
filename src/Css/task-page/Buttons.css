@@ -1,0 +1,27 @@
+.buttons {
+	flex: 1;
+	display: flex;
+}
+
+.not-now-button {
+	flex: 1;
+	align-self: center;
+	height: 35%;
+	margin-right: 3%;
+	margin-left: 30%;
+	border-radius: 2em;
+	border-width: thin;
+	font-size: 120%;
+}
+
+.to-editor-button {
+	flex: 1;
+	align-self: center;
+	height: 35%;
+	margin-right: 30%;
+	margin-left: 3%;
+	border-radius: 2em;
+	border-width: thin;
+	background: #D5EDFF;
+	font-size: 120%;
+}

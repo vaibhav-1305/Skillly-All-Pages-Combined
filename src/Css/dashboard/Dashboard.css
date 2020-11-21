@@ -1,0 +1,187 @@
+body{
+  background-color: #f5f5f5;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  /*overflow-x:hidden;*/
+}
+
+.total-grid {
+  margin-left: 2.6vw;
+  padding-top: 5.54vh;
+  display: grid;
+  width: inherit;
+  /* This height has been removed since it was giveing a lot of margin above the Heading of task
+  height: 100vh;*/
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 2fr 2fr 2fr;
+  grid-template-areas:
+  "main-body main-body main-body main-body"
+  "t1        t2        t3        overview "
+  "t4        t5        t6        overview"
+  "t7        t8        t9        overview";
+}
+
+
+.headings{
+	background: auto;
+	width: 80%;
+	padding-left: 23px;
+	grid-area: main-body;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+  margin-bottom: 1%;
+
+}
+.headings h1{
+  margin-bottom: 10px;
+}
+#task-nav{
+  display: flex;
+  width: 45%;
+	justify-content: space-between;
+}
+#task-nav a{
+  text-decoration: None;
+  color: #BDBDBD;
+}
+.active{
+  color: #060606!important;
+}
+.tasks{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 6%;
+}
+.tasks div{
+  background-color: #FFFFFF;
+}
+#task1{
+  grid-area: t1;
+}
+#task2{
+  grid-area: t2;
+}
+#task3{
+  grid-area: t3;
+}
+#task4{
+  grid-area: t4;
+}
+#task5{
+  grid-area: t5;
+}
+#task6{
+  grid-area: t6;
+}
+#task7{
+  grid-area: t7;
+}
+#task8{
+  grid-area: t8;
+}
+#task9{
+  grid-area: t9;
+}
+.quick-view{
+  grid-area: overview;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+.quick-view div{
+  background-color: #FFFFFF;
+}
+.article-dashboard{
+  background-color: #FFFFFF;
+  color: black;
+  margin-left: auto;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+}
+.tasklogo{
+  float:left;
+  height: 40px;
+  width: 40px;
+  display: inline;
+}
+
+/* The heading/topic of each article */
+.article-topic{
+  font-size: 25px;
+  display: inline;
+  text-decoration: none;
+
+}
+.article-topic h3{
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0px 0px 10px 0px;
+}
+/* All the details of the article */
+.article-details{
+  font-size: 14px;
+  text-align: left;
+}
+.article-details p{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+/* the word progress written and the percentage mentioned */
+.progress-dashboard{
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+/* A general class for float right */
+.fright{
+  float: right;
+}
+/* outer box of theprogress bar */
+.progressbar {
+  background-color: #BDBDBD;
+  border-radius: 4px;
+}
+/* the bar representing progress */
+.progressbar>div {
+  background-color: orange;
+  width: 40%;
+  height: 8px;
+  border-radius: 5px;
+}
+/* all the views comments and time taken */
+.engagement{
+  font-size: 10px;
+  margin-top: 10px;
+  color: #b5b5b5;
+}
+/* the rightmost box containing past transactions and donut chart */
+.quickv{
+  display: inline-block;
+  box-sizing: border-box;
+  float:right;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 15px 20px;
+}
+h3{
+  margin: 0px;
+}
+#donut-chart img{
+  width: 90%;
+}
+#donut-chart{
+  padding: 0px 60px 20px;
+}
+.rule{
+  align-self: center;
+  width: 95%;
+}
+#past-transactions{
+  padding-left: 5px;
+  padding-top: 20px;
+}

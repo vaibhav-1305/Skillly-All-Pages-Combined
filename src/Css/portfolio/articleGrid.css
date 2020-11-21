@@ -1,0 +1,38 @@
+
+.articles{
+    width: 76vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4vw;
+    padding-top: 10vh;
+  }
+
+
+
+  .article-portfolio{
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid grey;
+    padding: 2%;
+  }
+
+
+  .article-img{
+    height: 12vw;
+    width: 100%;
+  }
+
+
+  .article-heading{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3.2vh;
+  }
+
+
+  .article-text{
+    font-size: 14px;
+  }
